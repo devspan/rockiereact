@@ -11,7 +11,7 @@ import chart2 from '../../assets/images/icon/chart-down-2.png';
 
 function Crypto02(props) {
 
-    const [dataCrytoContent] = useState([
+    const [dataCryptoContent, setDataCryptoContent] = useState([
         {
             id: 1,
             icon: img1,
@@ -59,7 +59,48 @@ function Crypto02(props) {
         const getData = async () => {
             const data = await fetch("https://ultronxchange.io/api/v1/home-page/")
             const response = await data.json()
-            console.log(response)
+            console.log(response.pairs_data)
+            setDataCryptoContent([{
+                id: 1,
+                icon: img1,
+                chart: chart1,
+                name: 'Bitcoin',
+                unit: 'BTC',
+                price: response.pairs_data["BTC-USDT"].price,
+                sale:'7.2%',
+                class: 'success'
+            },
+                {
+                    id: 1,
+                    icon: img2,
+                    chart: chart2,
+                    name: 'Ethereum',
+                    unit: 'ETH',
+                    price: response.pairs_data["ETH-USDT"].price,
+                    sale:'7.2%',
+                    class: 'critical'
+                },
+                {
+                    id: 3,
+                    icon: img3,
+                    chart: chart1,
+                    name: 'Ultron',
+                    unit: 'ULC',
+                    price: response.pairs_data["ULC-USDT"].price,
+                    sale:'3.54%',
+                    class: 'success'
+                },
+                {
+                    id: 4,
+                    icon: img4,
+                    chart: chart1,
+                    name: 'BNB',
+                    unit: 'BNB',
+                    price: response.pairs_data["BNB-USDT"].price,
+                    sale:'3.24%',
+                    class: 'success'
+                }]
+            )
         }
         getData()
     })
@@ -70,7 +111,7 @@ function Crypto02(props) {
                 <div className="col-md-12">
                     <div className="crypto__main">
                         {
-                            dataCrytoContent.map(idx => (
+                            dataCryptoContent.map(idx => (
                                 <div key={idx.id} className="crypto-box">
                                     <div className="left">
                                     <img src={idx.icon} alt="Ultron" />
