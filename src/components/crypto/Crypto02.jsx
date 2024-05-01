@@ -71,7 +71,7 @@ function Crypto02(props) {
                 class: 'success'
             },
                 {
-                    id: 1,
+                    id: 2,
                     icon: img2,
                     chart: chart2,
                     name: 'Ethereum',

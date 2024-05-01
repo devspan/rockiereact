@@ -435,10 +435,12 @@ const Header = () => {
                                 </Dropdown.Menu>
                             </Dropdown> */}
                         <div className="wallet">
-                        <Link to="/account/login"> Login </Link>
+                                    {/* <Link to="/account/login"> Login </Link> */}
+                                    <a href='/account/login'>Login</a>
                         </div>
                         <div className="wallet">
-                        <Link to="/account/register"> Register </Link>
+                                    {/* <Link to="/account/register"> Register </Link> */}
+                                    <a href='/account/register'>Register</a>
                         </div>
 
                     </div>
