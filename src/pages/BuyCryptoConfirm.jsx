@@ -7,7 +7,7 @@ import Sale01 from '../components/sale/Sale01';
 import PageTitle from '../components/pagetitle';
 
 BuyCryptoConfirm.propTypes = {
-    
+
 };
 
 function BuyCryptoConfirm(props) {
@@ -170,7 +170,7 @@ function BuyCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Rockie</h6>
+                                            <h6 className="price">Ultron</h6>
                                         </div>
                                         </li>
                                     </ul>
@@ -359,7 +359,7 @@ function BuyCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Rockie</h6>
+                                            <h6 className="price">Ultron</h6>
                                         </div>
                                         </li>
                                     </ul>
@@ -548,7 +548,7 @@ function BuyCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Rockie</h6>
+                                            <h6 className="price">Ultron</h6>
                                         </div>
                                         </li>
                                     </ul>
@@ -612,16 +612,16 @@ function BuyCryptoConfirm(props) {
                                     </div>
                                 </div>
                             </TabPanel>
-                            
 
-                    </Tabs> 
-                    
+
+                    </Tabs>
+
                 </div>
             </div>
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

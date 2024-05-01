@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React , {useEffect, useState} from 'react';
 
 import img1 from '../../assets/images/coin/btc-2.png'
 import img2 from '../../assets/images/coin/eth-2.png'
@@ -54,6 +54,15 @@ function Crypto02(props) {
             class: 'success'
         },
     ])
+
+    useEffect(() => {
+        const getData = async () => {
+            const data = await fetch("https://ultronxchange.io/api/v1/home-page/")
+            const response = await data.json()
+            console.log(response)
+        }
+        getData()
+    })
     return (
         <section className="crypto" data-aos="fade-up" data-aos-duration="1000">
             <div className="container">
@@ -64,13 +73,13 @@ function Crypto02(props) {
                             dataCrytoContent.map(idx => (
                                 <div key={idx.id} className="crypto-box">
                                     <div className="left">
-                                    <img src={idx.icon} alt="Rockie" />
+                                    <img src={idx.icon} alt="Ultron" />
                                     <h6> {idx.name}</h6>
                                     <h6 className="price">{idx.price}</h6>
                                     </div>
 
                                     <div className="right">
-                                    <img src={idx.chart} alt="Rockie" />
+                                    <img src={idx.chart} alt="Ultron" />
                                     <p className={`sale ${idx.class}`}>
                                         <svg
                                         width="8"

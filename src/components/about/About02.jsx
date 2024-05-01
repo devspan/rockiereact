@@ -50,14 +50,14 @@ function About02(props) {
                     <img
                         className="img-main"
                         src={img}
-                        alt="Rockie"
+                        alt="Ultron"
                     />
 
                     {
                         dataTrader.map(idx=> (
                             <div key={idx.id} className="traders-box">
                                 <div className="icon">
-                                    <img src={idx.icon} alt="Rockie" />
+                                    <img src={idx.icon} alt="Ultron" />
                                 </div>
                                 <div className="content">
                                 <h6 className="numb">{idx.numb}</h6>
@@ -87,7 +87,7 @@ function About02(props) {
                             data.map(idx => (
                                 <li key={idx.id}>
                                     <div className={`icon ${idx.class}`}>
-                                        <img src={idx.icon} alt="Rockie" />
+                                        <img src={idx.icon} alt="Ultron" />
                                     </div>
                                     <div className="content">
                                         <h6 className="title">{idx.title}</h6>
@@ -98,7 +98,7 @@ function About02(props) {
                                 </li>
                             ))
                         }
-                        
+
                     </ul>
                     </div>
                 </div>

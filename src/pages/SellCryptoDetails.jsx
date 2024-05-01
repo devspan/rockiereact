@@ -7,7 +7,7 @@ import Sale01 from '../components/sale/Sale01';
 import PageTitle from '../components/pagetitle';
 
 SellCryptoDetails.propTypes = {
-    
+
 };
 
 function SellCryptoDetails(props) {
@@ -29,7 +29,7 @@ function SellCryptoDetails(props) {
     return (
         <div>
             <PageTitle heading='Sell Crypto' title='Sell Crypto' />
-            
+
             <section className="wallet sell buy-crypto flat-tabs">
                 <div className="container">
                     <div className="row">
@@ -143,7 +143,7 @@ function SellCryptoDetails(props) {
                                         </div>
                                     </div>
                                     <p>
-                                        You successfully bought 1.356 <span>BTC</span> for Rockie!
+                                        You successfully bought 1.356 <span>BTC</span> for Ultron!
                                     </p>
 
                                     <ul className="status">
@@ -404,7 +404,7 @@ function SellCryptoDetails(props) {
                                         </div>
                                     </div>
                                     <p>
-                                        You successfully bought 1.356 <span>BTC</span> for Rockie!
+                                        You successfully bought 1.356 <span>BTC</span> for Ultron!
                                     </p>
 
                                     <ul className="status">
@@ -665,7 +665,7 @@ function SellCryptoDetails(props) {
                                         </div>
                                     </div>
                                     <p>
-                                        You successfully bought 1.356 <span>BTC</span> for Rockie!
+                                        You successfully bought 1.356 <span>BTC</span> for Ultron!
                                     </p>
 
                                     <ul className="status">
@@ -828,16 +828,16 @@ function SellCryptoDetails(props) {
                                 </div>
                             </TabPanel>
 
-                            
 
-                    </Tabs> 
+
+                    </Tabs>
 
                     </div>
                 </div>
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

@@ -47,7 +47,7 @@ function Coinlist01(props) {
         },
     ]);
 
-    
+
     return (
         <section className="coin-list">
             <div className="container">
@@ -95,28 +95,28 @@ function Coinlist01(props) {
                                                             <td>{idx.id}</td>
                                                             <td>
                                                                 <Link to="#">
-                                                            <img src={idx.icon} alt="rockie" />
+                                                            <img src={idx.icon} alt="Ultron" />
                                                                 <span>{idx.name}</span>
                                                                 <span className="unit">{idx.unit}</span></Link>
                                                             </td>
                                                             <td className="boild">{idx.price}</td>
                                                             <td className={`${idx.class}`}>{idx.sale}</td>
                                                             <td className="boild">{idx.cap}</td>
-                                                            <td><img src={idx.chart} alt="Rockie" /></td>
+                                                            <td><img src={idx.chart} alt="Ultron" /></td>
                                                             <td><Link to="#" className="btn">Trade</Link></td>
                                                         </tr>
                                                     ))
                                                 }
-                                                
+
                                             </tbody>
                                             </table>
                                         </div>
                                     </TabPanel>
                                 ))
                             }
-                            
 
-                        </Tabs> 
+
+                        </Tabs>
                     </div>
                 </div>
                 </div>

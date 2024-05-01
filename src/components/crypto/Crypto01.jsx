@@ -12,7 +12,7 @@ import './styles.scss';
 import {Link} from 'react-router-dom';
 
 Crypto01.propTypes = {
-    
+
 };
 
 function Crypto01(props) {
@@ -124,7 +124,7 @@ function Crypto01(props) {
                                                     <div key={data.id} className={`crypto-box ${data.active}`}>
                                                         <div className="top">
                                                             <Link to="#">
-                                                            <img src={data.icon} alt="rockie" />
+                                                            <img src={data.icon} alt="Ultron" />
                                                             <span>{data.name}</span>
                                                             <span className="unit">{data.unit}</span></Link>
                                                         </div>
@@ -136,14 +136,14 @@ function Crypto01(props) {
                                                     </div>
                                                 ))
                                             }
-                                        
+
                                         </div>
                                     </TabPanel>
                                 ))
                             }
-                            
 
-                        </Tabs> 
+
+                        </Tabs>
                     </div>
                 </div>
                 </div>

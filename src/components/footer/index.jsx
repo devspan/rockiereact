@@ -81,7 +81,7 @@ function Footer(props) {
             path: '#'
         },
     ])
-    
+
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -91,7 +91,7 @@ function Footer(props) {
         behavior: "smooth"
       });
     };
-  
+
     useEffect(() => {
       const toggleVisibility = () => {
         if (window.pageYOffset > 500) {
@@ -100,9 +100,9 @@ function Footer(props) {
           setIsVisible(false);
         }
       };
-  
+
       window.addEventListener("scroll", toggleVisibility);
-  
+
       return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
 
@@ -189,14 +189,14 @@ function Footer(props) {
             <div className="container-fluid">
                 <div className="footer__bottom">
                 <p>
-                    ©2022 Rockie.com. All rights reserved. Terms of Service | Privacy
+                    ©2022 Ultron.com. All rights reserved. Terms of Service | Privacy
                     Terms
                 </p>
                 </div>
             </div>
 
             {
-                isVisible && 
+                isVisible &&
                 <Link onClick={scrollToTop}  to='#' id="scroll-top"></Link>
             }
         </footer>

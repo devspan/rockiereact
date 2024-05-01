@@ -13,7 +13,7 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 
 Testimonial01.propTypes = {
-    
+
 };
 
 function Testimonial01(props) {
@@ -45,13 +45,13 @@ function Testimonial01(props) {
                     <div className="swiper swiper-thumb1">
                         <div className="swiper-wrapper list-img">
                         <div className="swiper-slide">
-                            <img src={avt1} alt="Rockie" />
+                            <img src={avt1} alt="Ultron" />
                         </div>
                         <div className="swiper-slide">
-                            <img src={avt2} alt="Rockie" />
+                            <img src={avt2} alt="Ultron" />
                         </div>
                         <div className="swiper-slide">
-                            <img src={avt3} alt="Rockie" />
+                            <img src={avt3} alt="Ultron" />
                         </div>
                         </div>
                     </div>
@@ -78,17 +78,17 @@ function Testimonial01(props) {
                                     </h6>
                                     <div className="bottom">
                                     <div className="info">
-                                        <img src={idx.avt} alt="Rockie" />
+                                        <img src={idx.avt} alt="Ultron" />
                                         <div className="content">
                                         <h6 className="name">{idx.name}</h6>
                                         <p className="position">{idx.position}</p>
                                         </div>
                                     </div>
-                                    <img src={idx.partner} alt="Rockie" />
+                                    <img src={idx.partner} alt="Ultron" />
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            
+
                         ))
                     }
                 </Swiper>

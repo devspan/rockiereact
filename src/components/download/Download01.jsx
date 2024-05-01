@@ -58,10 +58,10 @@ function Download01(props) {
                     </ul>
                     <div className="group-button">
                         <Link to="#"
-                        ><img src={img1} alt="Rockie"
+                        ><img src={img1} alt="Ultron"
                         /></Link>
                         <Link to="#"
-                        ><img src={img2} alt="Rockie"
+                        ><img src={img2} alt="Ultron"
                         /></Link>
                     </div>
                     </div>
@@ -69,7 +69,7 @@ function Download01(props) {
                 <div className="col-xl-6 col-md-12">
                     <div className="download__image">
                     <div className="button">Scan To Download</div>
-                    <img src={img3} alt="Rockie" />
+                    <img src={img3} alt="Ultron" />
                     </div>
                 </div>
                 </div>

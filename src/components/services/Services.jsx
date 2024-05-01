@@ -27,7 +27,7 @@ function Services(props) {
                             data.map(idx => (
                                 <div key={idx.id} className="services-box">
                                     <div className="icon">
-                                        <img src={idx.icon} alt="Rockie" />
+                                        <img src={idx.icon} alt="Ultron" />
                                     </div>
                                     <Link to="#" className="h6 title">{idx.title}</Link>
                                     <p>
@@ -36,7 +36,7 @@ function Services(props) {
                                 </div>
                             ))
                         }
-                    
+
                     </div>
                 </div>
                 <div className="col-xl-6 col-md-12">
@@ -46,9 +46,9 @@ function Services(props) {
                         {dataBlock.desc}
                     </p>
                     <Button title='Let’s Trade Now' path="#" />
-                    <img src={img} alt="Rockie" />
+                    <img src={img} alt="Ultron" />
                     </div>
-                    
+
                 </div>
                 </div>
             </div>

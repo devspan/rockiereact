@@ -7,7 +7,7 @@ import Sale01 from '../components/sale/Sale01';
 import PageTitle from '../components/pagetitle';
 
 BuyCryptoDetails.propTypes = {
-    
+
 };
 
 function BuyCryptoDetails(props) {
@@ -121,7 +121,7 @@ function BuyCryptoDetails(props) {
                                     </div>
                                 </div>
                                 <p>
-                                    You successfully bought 1.356 <span>BTC</span> for Rockie!
+                                    You successfully bought 1.356 <span>BTC</span> for Ultron!
                                 </p>
 
                                 <ul className="status">
@@ -360,7 +360,7 @@ function BuyCryptoDetails(props) {
                                     </div>
                                 </div>
                                 <p>
-                                    You successfully bought 1.356 <span>BTC</span> for Rockie!
+                                    You successfully bought 1.356 <span>BTC</span> for Ultron!
                                 </p>
 
                                 <ul className="status">
@@ -599,7 +599,7 @@ function BuyCryptoDetails(props) {
                                     </div>
                                 </div>
                                 <p>
-                                    You successfully bought 1.356 <span>BTC</span> for Rockie!
+                                    You successfully bought 1.356 <span>BTC</span> for Ultron!
                                 </p>
 
                                 <ul className="status">
@@ -761,14 +761,14 @@ function BuyCryptoDetails(props) {
                                 </div>
                             </div>
                         </TabPanel>
-                            
-                    </Tabs> 
+
+                    </Tabs>
                     </div>
                 </div>
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

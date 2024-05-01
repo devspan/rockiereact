@@ -10,13 +10,13 @@ import {Link} from 'react-router-dom';
 import img from '../assets/images/icon/qrcode.png'
 
 Login.propTypes = {
-    
+
 };
 
 function Login(props) {
     return (
         <div>
-             
+
              <PageTitle heading='Login' title='Login' />
 
 
@@ -25,7 +25,7 @@ function Login(props) {
                 <div className="row">
                 <div className="col-md-12">
                     <div className="block-text center">
-                    <h3 className="heading">Login To Rockie</h3>
+                    <h3 className="heading">Login To Ultron</h3>
                     <p className="desc fs-20">
                         Welcome back! Log In now to start trading
                     </p>
@@ -52,15 +52,15 @@ function Login(props) {
                             />
                         </svg>
                         </div>
-                        <p><span>https://</span>accounts.rockie.com/login</p>
+                        <p><span>https://</span>accounts.Ultron.com/login</p>
                     </div>
                     </div>
                 </div>
                 <div className="col-md-12">
                 <Tabs>
-                    
+
                     <TabList>
-      
+
                         <Tab><h6 className="fs-16">Email</h6></Tab>
                         <Tab><h6 className="fs-16">Mobile</h6></Tab>
 
@@ -154,15 +154,15 @@ function Login(props) {
                         </div>
                     </TabPanel>
 
-                    
 
-                </Tabs> 
+
+                </Tabs>
 
                     <div className="qr-code center">
                     <img src={img} alt="" />
                     <h6 className="fs-20">Login with QR code</h6>
                     <p className="fs-14">
-                        Scan this code with the <span>Rockie mobile app</span> <br />
+                        Scan this code with the <span>Ultron mobile app</span> <br />
                         to log in instantly.
                     </p>
                     </div>
@@ -172,7 +172,7 @@ function Login(props) {
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

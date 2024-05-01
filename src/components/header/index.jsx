@@ -37,10 +37,10 @@ const Header = () => {
         setMenuActive(!menuActive);
       };
 
-    
+
     const [activeIndex, setActiveIndex] = useState(null);
     const handleDropdown = index => {
-        setActiveIndex(index); 
+        setActiveIndex(index);
     };
 
     return (
@@ -54,13 +54,13 @@ const Header = () => {
                         <NavLink to='/' className="light">
                             <img
                             src={logo}
-                            alt="Rockie"
+                            alt="Ultron"
                             />
                         </NavLink>
                         <NavLink to='/' className="dark">
                             <img
                             src={logodark}
-                            alt="Rockie"
+                            alt="Ultron"
                             />
                         </NavLink>
                         </div>
@@ -69,8 +69,8 @@ const Header = () => {
                                 <ul id="menu-primary-menu" className="menu">
                                 {
                                     menus.map((data,idx) => (
-                                        <li key={idx} onClick={()=> handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`} 
-                                        
+                                        <li key={idx} onClick={()=> handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`}
+
                                         >
                                             <Link to={data.links}>{data.name}</Link>
                                             {
@@ -83,21 +83,21 @@ const Header = () => {
                                                     }
                                                 </ul>
                                             }
-                                            
+
                                         </li>
                                     ))
                                 }
                                 </ul>
                             </nav>
-                            
-                 
+
+
                         </div>
                     </div>
 
                     <div className="header__right">
-                            <Dropdown>
+                            {/* <Dropdown>
                                 <Dropdown.Toggle >
-                                    Assets      
+                                    Assets
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
@@ -110,13 +110,13 @@ const Header = () => {
                                 <Dropdown.Item href="#">
                                     <li data-toggle="modal" data-target="#edit_client">Binance Pay</li>
                                 </Dropdown.Item>
-                                
+
                                 </Dropdown.Menu>
                             </Dropdown>
 
                             <Dropdown>
                                 <Dropdown.Toggle >
-                                Orders & Trades    
+                                Orders & Trades
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
@@ -132,13 +132,13 @@ const Header = () => {
                                 <Dropdown.Item href="#">
                                     <li data-toggle="modal" data-target="#edit_client">P2P</li>
                                 </Dropdown.Item>
-                                
+
                                 </Dropdown.Menu>
                             </Dropdown>
 
                             <Dropdown>
                                 <Dropdown.Toggle >
-                                    EN/USD  
+                                    EN/USD
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
@@ -150,7 +150,7 @@ const Header = () => {
                                         >
                                         <img
                                             src={icon1}
-                                            alt="user-image"
+                                            alt="user-photo"
                                             className="me-1"
                                             height="12"
                                         />
@@ -217,15 +217,15 @@ const Header = () => {
                                         <span className="align-middle">English</span>
                                     </Link>
                                 </Dropdown.Item>
-                                
-                                
+
+
                                 </Dropdown.Menu>
-                            </Dropdown>
+                            </Dropdown> */}
 
-                        <DarkMode />
+                        {/* <DarkMode /> */}
 
-                        
-                        <div className="dropdown notification">
+
+                        {/* <div className="dropdown notification">
                         <button
                             className="btn dropdown-toggle"
                             type="button"
@@ -400,10 +400,10 @@ const Header = () => {
                         <Link to="/wallet"> Wallet </Link>
                         </div>
 
-                        
+
                         <Dropdown className='user'>
                                 <Dropdown.Toggle >
-                                    <img src={avt} alt="Rockie" />  
+                                    <img src={avt} alt="Ultron" />
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
@@ -431,18 +431,23 @@ const Header = () => {
                                     ></i>
                                     <span>Logout</span></Link>
                                 </Dropdown.Item>
-                                
-                                </Dropdown.Menu>
-                            </Dropdown>
 
-                        
+                                </Dropdown.Menu>
+                            </Dropdown> */}
+                        <div className="wallet">
+                        <Link to="/account/login"> Login </Link>
+                        </div>
+                        <div className="wallet">
+                        <Link to="/account/register"> Register </Link>
+                        </div>
+
                     </div>
                     </div>
                 </div>
                 </div>
             </div>
         </header>
-       
+
     );
 }
 

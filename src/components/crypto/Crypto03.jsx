@@ -15,7 +15,7 @@ import './styles.scss';
 import {Link} from 'react-router-dom';
 
 Crypto03.propTypes = {
-    
+
 };
 
 function Crypto03(props) {
@@ -117,7 +117,7 @@ function Crypto03(props) {
 
                             </TabList>
 
-                            
+
                             {
                                 dataCrytoTab.map(idx => (
                                     <TabPanel key={idx.id}>
@@ -126,13 +126,13 @@ function Crypto03(props) {
                                                 dataCrytoContent.map(idx => (
                                                     <div key={idx.id} className="crypto-box">
                                                         <div className="left">
-                                                        <img src={idx.icon} alt="Rockie" />
+                                                        <img src={idx.icon} alt="Ultron" />
                                                         <h6> {idx.name}</h6>
                                                         <h6 className="price">{idx.price}</h6>
                                                         </div>
 
                                                         <div className="right">
-                                                        <img src={idx.chart} alt="Rockie" />
+                                                        <img src={idx.chart} alt="Ultron" />
                                                         <p className={`sale ${idx.class}`}>
                                                             <svg
                                                             width="8"
@@ -157,9 +157,9 @@ function Crypto03(props) {
                                     </TabPanel>
                                 ))
                             }
-                            
 
-                        </Tabs> 
+
+                        </Tabs>
                     </div>
                 </div>
                 </div>

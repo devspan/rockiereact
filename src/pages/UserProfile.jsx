@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom';
 import img from '../assets/images/avt/avt.png'
 
 UserProfile.propTypes = {
-    
+
 };
 
 function UserProfile(props) {
@@ -53,7 +53,7 @@ function UserProfile(props) {
             <div className="container">
                 <div className="row">
                 <Tabs>
-                    
+
                     <TabList>
                         <div className="user-info center">
                             <div className="avt">
@@ -207,7 +207,7 @@ function UserProfile(props) {
                                 <input
                                     className="form-control"
                                     type="text"
-                                    value="https://accounts.rockie.com/login"
+                                    value="https://accounts.Ultron.com/login"
                                 />
                                 </div>
                                 <div>
@@ -359,15 +359,15 @@ function UserProfile(props) {
                             </button>
                         </div>
                     </TabPanel>
-                    
 
-                </Tabs> 
+
+                </Tabs>
                 </div>
             </div>
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

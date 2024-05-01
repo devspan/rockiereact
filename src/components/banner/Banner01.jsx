@@ -25,8 +25,8 @@ function Banner01(props) {
 
     const [dataBlock] = useState(
         {
-            title: 'Buy & Sell Digital Assets In The Rockie',
-            desc : 'Coin rockie is the easiest, safest, and fastest way to buy & sell crypto asset exchange.',
+            title: 'Buy & Sell Digital Assets In The Ultron',
+            desc : 'Coin Ultron is the easiest, safest, and fastest way to buy & sell crypto asset exchange.',
             title2: 'Our Partners'
         }
     );
@@ -55,10 +55,10 @@ function Banner01(props) {
                                     data.map(idx => (
                                         <SwiperSlide key={idx.id}>
                                             <Link to="#">
-                                                <img src={idx.img} alt="Rockies"/>
+                                                <img src={idx.img} alt="Ultrons"/>
                                             </Link>
                                         </SwiperSlide>
-                                        
+
                                     ))
                                 }
                             </Swiper>
@@ -68,7 +68,7 @@ function Banner01(props) {
                     </div>
                     <div className="col-xl-6 col-md-12">
                         <div className="banner__image">
-                        <img src={img1} alt="Rockie" />
+                        <img src={img1} alt="Ultron" />
                         </div>
                     </div>
                     </div>

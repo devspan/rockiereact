@@ -5,7 +5,7 @@ import line from '../../assets/images/icon/connect-line.png'
 import {Link} from 'react-router-dom';
 
 Work01.propTypes = {
-    
+
 };
 
 function Work01(props) {
@@ -35,7 +35,7 @@ function Work01(props) {
                             data.map(idx => (
                                 <div className="work-box" key={idx.id}>
                                     <div className="image">
-                                    <img src={idx.img} alt="Rockie" />
+                                    <img src={idx.img} alt="Ultron" />
                                     </div>
                                     <div className="content">
                                     <p className="step">{idx.step}</p>
@@ -45,7 +45,7 @@ function Work01(props) {
                                     <img
                                     className="line"
                                     src={line}
-                                    alt="Rockie"
+                                    alt="Ultron"
                                     />
                                 </div>
                             ))

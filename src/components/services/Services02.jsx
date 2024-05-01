@@ -22,8 +22,8 @@ function Services02(props) {
 
     const [dataBlock] = useState(
         {
-            heading: 'Why choose Rockie',
-            desc : 'Rockie has a variety of features that make it the best place to start trading'
+            heading: 'Why choose Ultron',
+            desc : 'Ultron has a variety of features that make it the best place to start trading'
         }
     )
     const [dataIcon] = useState([
@@ -62,7 +62,7 @@ function Services02(props) {
                         data.map(idx =>(
                         <li key={idx.id} className={idx.active}>
                             <div className={`icon ${idx.bg}`}>
-                                <img src={idx.icon} alt="Rockie" />
+                                <img src={idx.icon} alt="Ultron" />
                             </div>
                             <div className="content">
                                 <h6 className="title">{idx.title}</h6>
@@ -73,7 +73,7 @@ function Services02(props) {
                         </li>
                         ))
                     }
-                    
+
                 </ul>
                 </div>
             </div>
@@ -88,7 +88,7 @@ function Services02(props) {
                             dataIcon.map((data,idx) => (
                                 <li className="icon" key={idx}>
                                     <Link to="#"
-                                    ><img src={data.icon} alt="Rockie"
+                                    ><img src={data.icon} alt="Ultron"
                                     /></Link>
                                 </li>
                             ))
@@ -96,9 +96,9 @@ function Services02(props) {
                     </ul>
                 </div>
                 <div className="crypto-box">
-                    <img className="arrow" src={arrow} alt="Rockie" />
+                    <img className="arrow" src={arrow} alt="Ultron" />
                     <div className="left">
-                    <img src={bitcoin} alt="Rockie" />
+                    <img src={bitcoin} alt="Ultron" />
                     <div>
                         <h6>BTC</h6>
                         <p>+1.46%</p>
@@ -107,13 +107,13 @@ function Services02(props) {
 
                     <div className="right">
                     <h6 className="price">$56,623.54</h6>
-                    <img src={chart} alt="Rockie" />
+                    <img src={chart} alt="Ultron" />
                     </div>
                 </div>
                 <div className="shape"></div>
                 <div className="user-card">
                     <div className="info">
-                    <img src={avt} alt="Rockie" />
+                    <img src={avt} alt="Ultron" />
                     <h6>Esther Howard</h6>
                     <p>estherhoward01@gmail.com</p>
                     </div>

@@ -7,7 +7,7 @@ import Sale01 from '../components/sale/Sale01';
 import PageTitle from '../components/pagetitle';
 
 SellCryptoConfirm.propTypes = {
-    
+
 };
 
 function SellCryptoConfirm(props) {
@@ -29,7 +29,7 @@ function SellCryptoConfirm(props) {
     return (
         <div>
             <PageTitle heading='Sell Crypto' title='Sell Crypto' />
-            
+
             <section className="wallet sell buy-crypto flat-tabs">
                 <div className="container">
                     <div className="row">
@@ -191,7 +191,7 @@ function SellCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Rockie</h6>
+                                            <h6 className="price">Ultron</h6>
                                         </div>
                                         </li>
                                     </ul>
@@ -402,7 +402,7 @@ function SellCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Rockie</h6>
+                                            <h6 className="price">Ultron</h6>
                                         </div>
                                         </li>
                                     </ul>
@@ -613,7 +613,7 @@ function SellCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Rockie</h6>
+                                            <h6 className="price">Ultron</h6>
                                         </div>
                                         </li>
                                     </ul>
@@ -678,16 +678,16 @@ function SellCryptoConfirm(props) {
                                 </div>
                             </TabPanel>
 
-                            
 
-                    </Tabs> 
+
+                    </Tabs>
 
                     </div>
                 </div>
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

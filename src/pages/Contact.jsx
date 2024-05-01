@@ -6,7 +6,7 @@ import img from '../assets/images/layout/contact.jpg'
 import PageTitle from '../components/pagetitle';
 
 Contact.propTypes = {
-    
+
 };
 
 function Contact(props) {
@@ -26,7 +26,7 @@ function Contact(props) {
                     <div className="contact-main">
                     <div className="block-text center">
                         <h3 className="heading">Leave a message for us</h3>
-                        <p className="desc fs-20">Get in touch with Rockie</p>
+                        <p className="desc fs-20">Get in touch with Ultron</p>
                     </div>
 
                     <form>
@@ -74,7 +74,7 @@ function Contact(props) {
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

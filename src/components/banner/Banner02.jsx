@@ -6,7 +6,7 @@ import Button from '../button';
 import img from '../../assets/images/layout/banner-02.png'
 
 Banner02.propTypes = {
-    
+
 };
 
 function Banner02(props) {
@@ -28,12 +28,12 @@ function Banner02(props) {
                         <p className="fs-20 desc">
                             {dataBlock.desc}
                         </p>
-                        <Button title='Trading Now' path='#' />
+                        <Button title='Trade Now' path='/account/trade/BTC-USDT' />
                     </div>
                 </div>
                 <div className="col-xl-6 col-md-12">
                     <div className="banner__image">
-                    <img src={img} alt="Rockie" />
+                    <img src={img} alt="Ultron" />
                     </div>
                 </div>
                 </div>

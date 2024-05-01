@@ -93,7 +93,7 @@ function BlogGrid01(props) {
                                                     <div key={idx.id} className="col-md-4">
                                                         <div className="blog-box">
                                                         <div className="box-image">
-                                                            <img src={idx.img} alt="Rockie" />
+                                                            <img src={idx.img} alt="Ultron" />
                                                             <div className="wrap-video">
                                                             <Link
                                                                 to="#"
@@ -179,15 +179,15 @@ function BlogGrid01(props) {
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </TabPanel>
                                 ))
                             }
 
-                            
-                            
 
-                        </Tabs> 
+
+
+                        </Tabs>
 
                     </div>
                     </div>
@@ -197,7 +197,7 @@ function BlogGrid01(props) {
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

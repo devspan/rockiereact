@@ -10,7 +10,7 @@ import PageTitle from '../components/pagetitle';
 import {Link} from 'react-router-dom'
 
 Register.propTypes = {
-    
+
 };
 
 function Register(props) {
@@ -26,7 +26,7 @@ function Register(props) {
                 <div className="row">
                 <div className="col-md-12">
                     <div className="block-text center">
-                    <h3 className="heading">Register To Rockie</h3>
+                    <h3 className="heading">Register To Ultron</h3>
                     <p className="desc fs-20">
                         Register in advance and enjoy the event benefits
                     </p>
@@ -34,9 +34,9 @@ function Register(props) {
                 </div>
                 <div className="col-md-12">
                 <Tabs>
-                    
+
                     <TabList>
-      
+
                         <Tab><h6 className="fs-16">Email</h6></Tab>
                         <Tab><h6 className="fs-16">Mobile</h6></Tab>
 
@@ -225,9 +225,9 @@ function Register(props) {
                         </div>
                     </TabPanel>
 
-                    
 
-                </Tabs> 
+
+                </Tabs>
 
                 </div>
                 </div>
@@ -235,7 +235,7 @@ function Register(props) {
             </section>
 
             <Sale01 />
-            
+
         </div>
     );
 }

@@ -18,7 +18,7 @@ import 'swiper/scss/pagination';
 import Button from '../button';
 
 About01.propTypes = {
-    
+
 };
 
 function About01(props) {
@@ -71,7 +71,7 @@ function About01(props) {
 
     const [dataBlock] = useState(
         {
-            heading: 'What Is Rockie',
+            heading: 'What Is Ultron',
             desc : 'Experience a variety of trading on Bitcost. You can use various types of coin transactions such as Spot Trade, Futures Trade, P2P, Staking, Mining, and margin.',
         }
     )
@@ -105,10 +105,10 @@ function About01(props) {
                                     <img
                                         className="img-main"
                                         src={idx.img}
-                                        alt="Rockie"
+                                        alt="Ultron"
                                     />
                                 </SwiperSlide>
-                                
+
                             ))
                         }
                     </Swiper>
@@ -119,12 +119,12 @@ function About01(props) {
                                 key={idx.id}
                                 className={ `icon ${idx.class}`}
                                 src={idx.img}
-                                alt="Rockie"
+                                alt="Ultron"
                             />
                         ))
                     }
 
-                   
+
                     </div>
                 </div>
                 <div className="col-xl-6 col-md-12">
