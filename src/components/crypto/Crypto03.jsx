@@ -126,13 +126,13 @@ function Crypto03(props) {
                                                 dataCrytoContent.map(idx => (
                                                     <div key={idx.id} className="crypto-box">
                                                         <div className="left">
-                                                        <img src={idx.icon} alt="Ultron" />
+                                                        <img src={idx.icon} alt="UltronX" />
                                                         <h6> {idx.name}</h6>
                                                         <h6 className="price">{idx.price}</h6>
                                                         </div>
 
                                                         <div className="right">
-                                                        <img src={idx.chart} alt="Ultron" />
+                                                        <img src={idx.chart} alt="UltronX" />
                                                         <p className={`sale ${idx.class}`}>
                                                             <svg
                                                             width="8"

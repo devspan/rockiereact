@@ -12,53 +12,29 @@ function Footer(props) {
     const [productLink] = useState([
         {
             title: 'Spot',
-            path: '/spot'
+            path: '/account/trade'
         },
         {
-            title: 'Inverse Perpetual',
-            path: '#'
+            title: 'Swap',
+            path: '/account/quick-swap'
         },
         {
-            title: 'USDT Perpetual',
-            path: '#'
-        },
-        {
-            title: 'Exchange',
-            path: '#'
-        },
-        {
-            title: 'Launchpad',
-            path: '#'
-        },
-        {
-            title: 'Binance Pay',
-            path: '#'
+            title: 'Wallet',
+            path: '/account/wallet'
         },
     ]);
     const [servicesLink] = useState([
         {
-            title: 'Buy Crypto',
-            path: '#'
+            title: 'Support',
+            path: '/account/support'
         },
         {
-            title: 'Markets',
-            path: '#'
+            title: 'Settings',
+            path: '/account/settings'
         },
         {
             title: 'Tranding Fee',
-            path: '#'
-        },
-        {
-            title: 'Affiliate Program',
-            path: '#'
-        },
-        {
-            title: 'Referral Program',
-            path: '#'
-        },
-        {
-            title: 'API',
-            path: '#'
+            path: '/account/fees'
         },
     ]);
 
@@ -122,25 +98,25 @@ function Footer(props) {
                         </Link>
                         <h6>Let's talk! 🤙</h6>
                         <ul className="list">
-                        <li><p>+12 345 678 9101</p></li>
-                        <li><p>Info.Avitex@Gmail.Com</p></li>
+                        {/* <li><p>+12 345 678 9101</p></li> */}
+                        <li><p>info@ultronexchnage.io</p></li>
                         <li>
-                            <p>
+                            {/* <p>
                             Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi
                             96522
-                            </p>
+                            </p> */}
                         </li>
                         </ul>
                     </div>
                     </div>
-                    <div className="col-xl-4 col-md-6">
+                    <div className="col-xl-8 col-md-6">
                     <div className="widget">
                         <div className="widget-link">
                         <h6 className="title">PRODUCTS</h6>
                         <ul>
                             {
                                 productLink.map((data,idx) => (
-                                    <li key={idx}><Link to={data.path}>{data.title}</Link></li>
+                                    <li key={idx}><a href={data.path}>{data.title}</a></li>
                                 ))
                             }
                         </ul>
@@ -150,14 +126,14 @@ function Footer(props) {
                         <ul>
                             {
                                 servicesLink.map((data,idx) => (
-                                    <li key={idx}><Link to={data.path}>{data.title}</Link></li>
+                                    <li key={idx}><a href={data.path}>{data.title}</a></li>
                                 ))
                             }
                         </ul>
                         </div>
                     </div>
                     </div>
-                    <div className="col-xl-4 col-md-12">
+                    {/* <div className="col-xl-4 col-md-12">
                     <div className="footer-contact">
                         <h5>Newletters</h5>
                         <p>
@@ -182,14 +158,14 @@ function Footer(props) {
                             }
                         </ul>
                     </div>
-                    </div>
+                    </div> */}
                 </div>
                 </div>
             </div>
             <div className="container-fluid">
                 <div className="footer__bottom">
                 <p>
-                    ©2022 Ultron.com. All rights reserved. Terms of Service | Privacy
+                    ©2022 UltronX.com. All rights reserved. Terms of Service | Privacy
                     Terms
                 </p>
                 </div>

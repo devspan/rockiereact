@@ -6,13 +6,13 @@ import img3 from '../images/icon/users.png'
 const dataAbout = [
     {
         id: 1,
-        title: 'What is Ultron',
+        title: 'What is UltronX',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus aliquam parturient erat id vel, condimentum a, hendrerit egestas. Auctor cras diam, dui pulvinar elit. Egestas feugiat gravida in imperdiet facilisi tortor ac ultrices venenatis. ',
         show: 'show'
     },
     {
         id: 2,
-        title: 'How to start with Ultron',
+        title: 'How to start with UltronX',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus aliquam parturient erat id vel, condimentum a, hendrerit egestas. Auctor cras diam, dui pulvinar elit. Egestas feugiat gravida in imperdiet facilisi tortor ac ultrices venenatis. ',
     },
     {
@@ -22,7 +22,7 @@ const dataAbout = [
     },
     {
         id: 4,
-        title: 'How to buy & sell in Ultron',
+        title: 'How to buy & sell in UltronX',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus aliquam parturient erat id vel, condimentum a, hendrerit egestas. Auctor cras diam, dui pulvinar elit. Egestas feugiat gravida in imperdiet facilisi tortor ac ultrices venenatis. ',
     },
 

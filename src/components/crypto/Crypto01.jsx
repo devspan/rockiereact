@@ -124,7 +124,7 @@ function Crypto01(props) {
                                                     <div key={data.id} className={`crypto-box ${data.active}`}>
                                                         <div className="top">
                                                             <Link to="#">
-                                                            <img src={data.icon} alt="Ultron" />
+                                                            <img src={data.icon} alt="UltronX" />
                                                             <span>{data.name}</span>
                                                             <span className="unit">{data.unit}</span></Link>
                                                         </div>

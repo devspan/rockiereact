@@ -25,7 +25,7 @@ function Login(props) {
                 <div className="row">
                 <div className="col-md-12">
                     <div className="block-text center">
-                    <h3 className="heading">Login To Ultron</h3>
+                    <h3 className="heading">Login To UltronX</h3>
                     <p className="desc fs-20">
                         Welcome back! Log In now to start trading
                     </p>
@@ -52,7 +52,7 @@ function Login(props) {
                             />
                         </svg>
                         </div>
-                        <p><span>https://</span>accounts.Ultron.com/login</p>
+                        <p><span>https://</span>accounts.UltronX.com/login</p>
                     </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@ function Login(props) {
                     <img src={img} alt="" />
                     <h6 className="fs-20">Login with QR code</h6>
                     <p className="fs-14">
-                        Scan this code with the <span>Ultron mobile app</span> <br />
+                        Scan this code with the <span>UltronX mobile app</span> <br />
                         to log in instantly.
                     </p>
                     </div>

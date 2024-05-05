@@ -71,7 +71,7 @@ function About01(props) {
 
     const [dataBlock] = useState(
         {
-            heading: 'What Is Ultron',
+            heading: 'What Is UltronX',
             desc : 'Experience a variety of trading on Bitcost. You can use various types of coin transactions such as Spot Trade, Futures Trade, P2P, Staking, Mining, and margin.',
         }
     )
@@ -105,7 +105,7 @@ function About01(props) {
                                     <img
                                         className="img-main"
                                         src={idx.img}
-                                        alt="Ultron"
+                                        alt="UltronX"
                                     />
                                 </SwiperSlide>
 
@@ -119,7 +119,7 @@ function About01(props) {
                                 key={idx.id}
                                 className={ `icon ${idx.class}`}
                                 src={idx.img}
-                                alt="Ultron"
+                                alt="UltronX"
                             />
                         ))
                     }

@@ -13,7 +13,7 @@ Button.propTypes = {
 function Button(props) {
     const {title , path } = props;
     return (
-        <Link to={path} className="btn-action"><span>{title}</span></Link>
+        <a href={path} className="btn-action"><span>{title}</span></a>
     );
 }
 

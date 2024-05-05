@@ -84,7 +84,7 @@ function Crypto02(props) {
                     id: 3,
                     icon: img3,
                     chart: chart1,
-                    name: 'Ultron',
+                    name: 'UltronX',
                     unit: 'ULC',
                     price: response.pairs_data["ULC-USDT"].price,
                     sale:'3.54%',
@@ -103,7 +103,7 @@ function Crypto02(props) {
             )
         }
         getData()
-    })
+    }, [])
     return (
         <section className="crypto" data-aos="fade-up" data-aos-duration="1000">
             <div className="container">
@@ -114,13 +114,13 @@ function Crypto02(props) {
                             dataCryptoContent.map(idx => (
                                 <div key={idx.id} className="crypto-box">
                                     <div className="left">
-                                    <img src={idx.icon} alt="Ultron" />
+                                    <img src={idx.icon} alt="UltronX" />
                                     <h6> {idx.name}</h6>
                                     <h6 className="price">{idx.price}</h6>
                                     </div>
 
                                     <div className="right">
-                                    <img src={idx.chart} alt="Ultron" />
+                                    <img src={idx.chart} alt="UltronX" />
                                     <p className={`sale ${idx.class}`}>
                                         <svg
                                         width="8"

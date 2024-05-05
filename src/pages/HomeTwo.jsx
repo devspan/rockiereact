@@ -20,7 +20,7 @@ function HomeTwo(props) {
 
     return (
         <div className='home-2'>
-            
+
             <Banner02 />
 
             <Crypto02 />
@@ -31,9 +31,9 @@ function HomeTwo(props) {
 
             <About02 data={dataAbout} />
 
-            <Work01 data={dataWork} />
+            {/* <Work01 data={dataWork} /> */}
 
-            <Blog data={dataBlog} />
+            {/* <Blog data={dataBlog} /> */}
         </div>
     );
 }

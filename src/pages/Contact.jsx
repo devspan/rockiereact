@@ -26,7 +26,7 @@ function Contact(props) {
                     <div className="contact-main">
                     <div className="block-text center">
                         <h3 className="heading">Leave a message for us</h3>
-                        <p className="desc fs-20">Get in touch with Ultron</p>
+                        <p className="desc fs-20">Get in touch with UltronX</p>
                     </div>
 
                     <form>

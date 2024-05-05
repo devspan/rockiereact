@@ -92,7 +92,7 @@ function Blog(props) {
                                 dataBlog.slice(0,4).map(idx => (
                                     <div key={idx.id} className="blog-box">
                                         <div className="box-image">
-                                        <img src={idx.img} alt="Ultron" />
+                                        <img src={idx.img} alt="UltronX" />
                                         <div className="wrap-video">
                                         <Link
                                             to="#"

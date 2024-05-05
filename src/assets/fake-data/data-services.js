@@ -20,9 +20,9 @@ const dataServices = [
         id: 3,
         icon: img3,
         title: 'Mobile Apps',
-        text: 'Stay On Top Of The Markets With The Cryptolly App For Android Or IOS.'
+        text: 'Stay On Top Of The Markets With The UltronX App For Android Or IOS.'
     },
-   
+
 ]
 
 export default dataServices;

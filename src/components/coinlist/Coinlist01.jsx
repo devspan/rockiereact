@@ -60,14 +60,14 @@ function Coinlist01(props) {
 
                     <div className="coin-list__main">
                     <Tabs>
-                            <TabList>
+                            {/* <TabList>
                                 {
                                     dataCoinTab.map(idx => (
                                         <Tab key={idx.id}>{idx.title}</Tab>
                                     ))
                                 }
 
-                            </TabList>
+                            </TabList> */}
 
                             {
                                 dataCoinTab.map(data => (
@@ -81,8 +81,8 @@ function Coinlist01(props) {
                                                     <th scope="col">Name</th>
                                                     <th scope="col">Last Price</th>
                                                     <th scope="col">24h %</th>
-                                                    <th scope="col">Market Cap</th>
-                                                    <th scope="col">Last 7 Days</th>
+                                                    {/* <th scope="col">Market Cap</th> */}
+                                                    {/* <th scope="col">Last 7 Days</th> */}
                                                     <th scope="col"></th>
                                                 </tr>
                                             </thead>
@@ -95,14 +95,14 @@ function Coinlist01(props) {
                                                             <td>{idx.id}</td>
                                                             <td>
                                                                 <Link to="#">
-                                                            <img src={idx.icon} alt="Ultron" />
+                                                            <img src={idx.icon} alt="UltronX" />
                                                                 <span>{idx.name}</span>
                                                                 <span className="unit">{idx.unit}</span></Link>
                                                             </td>
                                                             <td className="boild">{idx.price}</td>
                                                             <td className={`${idx.class}`}>{idx.sale}</td>
-                                                            <td className="boild">{idx.cap}</td>
-                                                            <td><img src={idx.chart} alt="Ultron" /></td>
+                                                            {/* <td className="boild">{idx.cap}</td> */}
+                                                            {/* <td><img src={idx.chart} alt="UltronX" /></td> */}
                                                             <td><Link to="#" className="btn">Trade</Link></td>
                                                         </tr>
                                                     ))

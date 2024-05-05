@@ -14,7 +14,7 @@ function Services(props) {
     const [dataBlock] = useState(
         {
             heading: 'The most trusted cryptocurrency platform.',
-            desc : 'Cryptolly has a variety of features that make it the best place to start trading'
+            desc : 'UltronX has a variety of features that make it the best place to start trading'
         }
     )
     return (
@@ -27,9 +27,9 @@ function Services(props) {
                             data.map(idx => (
                                 <div key={idx.id} className="services-box">
                                     <div className="icon">
-                                        <img src={idx.icon} alt="Ultron" />
+                                        <img src={idx.icon} alt="UltronX" />
                                     </div>
-                                    <Link to="#" className="h6 title">{idx.title}</Link>
+                                    <a href="#" className="h6 title">{idx.title}</a>
                                     <p>
                                     {idx.text}
                                     </p>
@@ -46,7 +46,7 @@ function Services(props) {
                         {dataBlock.desc}
                     </p>
                     <Button title='Let’s Trade Now' path="#" />
-                    <img src={img} alt="Ultron" />
+                    <img src={img} alt="UltronX" />
                     </div>
 
                 </div>

@@ -143,7 +143,7 @@ function SellCryptoDetails(props) {
                                         </div>
                                     </div>
                                     <p>
-                                        You successfully bought 1.356 <span>BTC</span> for Ultron!
+                                        You successfully bought 1.356 <span>BTC</span> for UltronX!
                                     </p>
 
                                     <ul className="status">
@@ -404,7 +404,7 @@ function SellCryptoDetails(props) {
                                         </div>
                                     </div>
                                     <p>
-                                        You successfully bought 1.356 <span>BTC</span> for Ultron!
+                                        You successfully bought 1.356 <span>BTC</span> for UltronX!
                                     </p>
 
                                     <ul className="status">
@@ -665,7 +665,7 @@ function SellCryptoDetails(props) {
                                         </div>
                                     </div>
                                     <p>
-                                        You successfully bought 1.356 <span>BTC</span> for Ultron!
+                                        You successfully bought 1.356 <span>BTC</span> for UltronX!
                                     </p>
 
                                     <ul className="status">

@@ -1,7 +1,7 @@
 import React , {useState} from 'react';
 import PropTypes from 'prop-types';
 
-import img from '../../assets/images/layout/Illustration.png'
+import img from '../../assets/images/layout/Ultronxchange-06.png'
 import img1 from '../../assets/images/icon/discovery.png'
 import img2 from '../../assets/images/icon/change.png'
 import img3 from '../../assets/images/icon/adduser.png'
@@ -17,7 +17,7 @@ function About02(props) {
     const [dataBlock] = useState(
         {
             heading: 'We are the most trusted cryptocurrency platform.',
-            desc : 'We believe Cryptolly is here to stay — and that a future worth building is one which opens its doors and invites everyone in.',
+            desc : 'We believe UltronX is here to stay — and that a future worth building is one which opens its doors and invites everyone in.',
         }
     );
     const [dataTrader] = useState([
@@ -50,14 +50,14 @@ function About02(props) {
                     <img
                         className="img-main"
                         src={img}
-                        alt="Ultron"
+                        alt="UltronX"
                     />
 
                     {
                         dataTrader.map(idx=> (
                             <div key={idx.id} className="traders-box">
                                 <div className="icon">
-                                    <img src={idx.icon} alt="Ultron" />
+                                    <img src={idx.icon} alt="UltronX" />
                                 </div>
                                 <div className="content">
                                 <h6 className="numb">{idx.numb}</h6>
@@ -87,7 +87,7 @@ function About02(props) {
                             data.map(idx => (
                                 <li key={idx.id}>
                                     <div className={`icon ${idx.class}`}>
-                                        <img src={idx.icon} alt="Ultron" />
+                                        <img src={idx.icon} alt="UltronX" />
                                     </div>
                                     <div className="content">
                                         <h6 className="title">{idx.title}</h6>

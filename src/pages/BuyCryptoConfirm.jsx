@@ -170,7 +170,7 @@ function BuyCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Ultron</h6>
+                                            <h6 className="price">UltronX</h6>
                                         </div>
                                         </li>
                                     </ul>
@@ -359,7 +359,7 @@ function BuyCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Ultron</h6>
+                                            <h6 className="price">UltronX</h6>
                                         </div>
                                         </li>
                                     </ul>
@@ -548,7 +548,7 @@ function BuyCryptoConfirm(props) {
                                         </div>
                                         <div className="content">
                                             <p>For</p>
-                                            <h6 className="price">Ultron</h6>
+                                            <h6 className="price">UltronX</h6>
                                         </div>
                                         </li>
                                     </ul>

@@ -25,8 +25,8 @@ function Banner01(props) {
 
     const [dataBlock] = useState(
         {
-            title: 'Buy & Sell Digital Assets In The Ultron',
-            desc : 'Coin Ultron is the easiest, safest, and fastest way to buy & sell crypto asset exchange.',
+            title: 'Buy & Sell Digital Assets In The UltronX',
+            desc : 'Coin UltronX is the easiest, safest, and fastest way to buy & sell crypto asset exchange.',
             title2: 'Our Partners'
         }
     );
@@ -68,7 +68,7 @@ function Banner01(props) {
                     </div>
                     <div className="col-xl-6 col-md-12">
                         <div className="banner__image">
-                        <img src={img1} alt="Ultron" />
+                        <img src={img1} alt="UltronX" />
                         </div>
                     </div>
                     </div>

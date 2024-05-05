@@ -51,18 +51,18 @@ const Header = () => {
                     <div className="header__body d-flex justify-content-between">
                     <div className="header__left">
                         <div className="logo">
-                        <NavLink to='/' className="light">
+                        <a href='/' className="light">
                             <img
                             src={logo}
-                            alt="Ultron"
+                            alt="UltronX"
                             />
-                        </NavLink>
-                        <NavLink to='/' className="dark">
+                        </a>
+                        <a href='/' className="dark">
                             <img
                             src={logodark}
-                            alt="Ultron"
+                            alt="UltronX"
                             />
-                        </NavLink>
+                        </a>
                         </div>
                         <div className="left__main">
                             <nav id="main-nav" className={`main-nav ${menuActive ? 'active' : ''}`}>
@@ -72,13 +72,13 @@ const Header = () => {
                                         <li key={idx} onClick={()=> handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`}
 
                                         >
-                                            <Link to={data.links}>{data.name}</Link>
+                                            <a href={data.links}>{data.name}</a>
                                             {
                                                 data.namesub &&
                                                 <ul className="sub-menu">
                                                     {
                                                         data.namesub.map((submenu) => (
-                                                            <li key={submenu.id} className="menu-item"><NavLink to={submenu.links}>{submenu.sub}</NavLink></li>
+                                                            <li key={submenu.id} className="menu-item"><a href={submenu.links}>{submenu.sub}</a></li>
                                                         ))
                                                     }
                                                 </ul>
@@ -403,7 +403,7 @@ const Header = () => {
 
                         <Dropdown className='user'>
                                 <Dropdown.Toggle >
-                                    <img src={avt} alt="Ultron" />
+                                    <img src={avt} alt="UltronX" />
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>

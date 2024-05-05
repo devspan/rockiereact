@@ -93,7 +93,7 @@ function BlogGrid01(props) {
                                                     <div key={idx.id} className="col-md-4">
                                                         <div className="blog-box">
                                                         <div className="box-image">
-                                                            <img src={idx.img} alt="Ultron" />
+                                                            <img src={idx.img} alt="UltronX" />
                                                             <div className="wrap-video">
                                                             <Link
                                                                 to="#"

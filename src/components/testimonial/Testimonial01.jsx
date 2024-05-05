@@ -45,13 +45,13 @@ function Testimonial01(props) {
                     <div className="swiper swiper-thumb1">
                         <div className="swiper-wrapper list-img">
                         <div className="swiper-slide">
-                            <img src={avt1} alt="Ultron" />
+                            <img src={avt1} alt="UltronX" />
                         </div>
                         <div className="swiper-slide">
-                            <img src={avt2} alt="Ultron" />
+                            <img src={avt2} alt="UltronX" />
                         </div>
                         <div className="swiper-slide">
-                            <img src={avt3} alt="Ultron" />
+                            <img src={avt3} alt="UltronX" />
                         </div>
                         </div>
                     </div>
@@ -78,13 +78,13 @@ function Testimonial01(props) {
                                     </h6>
                                     <div className="bottom">
                                     <div className="info">
-                                        <img src={idx.avt} alt="Ultron" />
+                                        <img src={idx.avt} alt="UltronX" />
                                         <div className="content">
                                         <h6 className="name">{idx.name}</h6>
                                         <p className="position">{idx.position}</p>
                                         </div>
                                     </div>
-                                    <img src={idx.partner} alt="Ultron" />
+                                    <img src={idx.partner} alt="UltronX" />
                                     </div>
                                 </div>
                             </SwiperSlide>

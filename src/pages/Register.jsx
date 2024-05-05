@@ -26,7 +26,7 @@ function Register(props) {
                 <div className="row">
                 <div className="col-md-12">
                     <div className="block-text center">
-                    <h3 className="heading">Register To Ultron</h3>
+                    <h3 className="heading">Register To UltronX</h3>
                     <p className="desc fs-20">
                         Register in advance and enjoy the event benefits
                     </p>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import Button from '../button';
 
-import img from '../../assets/images/layout/banner-02.png'
+import img from '../../assets/images/layout/Ultronxchange-03.png'
 
 Banner02.propTypes = {
 
@@ -13,7 +13,7 @@ function Banner02(props) {
     const [dataBlock] = useState(
         {
             heading: 'A trusted and secure cryptocurrency exchange.',
-            desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            desc : '',
         }
     );
     return (
@@ -33,7 +33,7 @@ function Banner02(props) {
                 </div>
                 <div className="col-xl-6 col-md-12">
                     <div className="banner__image">
-                    <img src={img} alt="Ultron" />
+                    <img src={img} alt="UltronX" />
                     </div>
                 </div>
                 </div>
