@@ -5,8 +5,10 @@ import menus from '../../pages/menu';
 import { Dropdown } from 'react-bootstrap';
 
 import './styles.scss';
-import logo from '../../assets/images/logo/logo.png';
-import logodark from '../../assets/images/logo/logo-dark.png';
+// import logo from '../../assets/images/logo/logo.png';
+// import logodark from '../../assets/images/logo/logo-dark.png';
+import logo from '../../assets/images/logo/Exchange Logo-03.png';
+import logodark from '../../assets/images/logo/Exchange Logo-03.png';
 import avt from '../../assets/images/avt/avt-01.jpg';
 import DarkMode from './DarkMode';
 

@@ -2,8 +2,8 @@ import React , { useState ,useEffect } from 'react';
 import './styles.scss';
 import { Link } from 'react-router-dom';
 
-import img from '../../assets/images/logo/log-footer.png'
-import img1 from '../../assets/images/logo/logo-footer-dark.png'
+import img from '../../assets/images/logo/Exchange Logo-01.png'
+import img1 from '../../assets/images/logo/Exchange Logo-01.png'
 
 
 
