@@ -56,13 +56,17 @@ const Header = () => {
                         <a href='/' className="light">
                             <img
                             src={logo}
-                            alt="UltronX"
+                                            alt="UltronX"
+                                            width={200}
+                                            height={50}
                             />
                         </a>
                         <a href='/' className="dark">
                             <img
                             src={logodark}
-                            alt="UltronX"
+                                            alt="UltronX"
+                                            width={200}
+                                            height={50}
                             />
                         </a>
                         </div>

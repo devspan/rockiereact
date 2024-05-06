@@ -90,12 +90,12 @@ function Footer(props) {
                 <div className="row">
                     <div className="col-xl-4 col-md-6">
                     <div className="info">
-                        <Link to="/" className="logo light">
-                        <img src={img} alt="" />
-                        </Link>
-                        <Link to="/" className="logo dark">
-                        <img src={img1} alt="" />
-                        </Link>
+                        <a href="/" className="logo light">
+                                    <img src={img} alt="" width={160} />
+                        </a>
+                        <a href="/" className="logo dark">
+                        <img src={img1} alt=""  width={160}/>
+                        </a>
                         <h6>Let's talk! 🤙</h6>
                         <ul className="list">
                         {/* <li><p>+12 345 678 9101</p></li> */}
@@ -152,7 +152,7 @@ function Footer(props) {
                             {
                                 listSocial.map((data,idx) => (
                                     <li key={idx}>
-                                        <Link to={data.path}><span className={data.icon}></span></Link>
+                                        <a href={data.path}><span className={data.icon}></span></a>
                                     </li>
                                 ))
                             }
