@@ -2,7 +2,7 @@ import React , {useEffect, useState} from 'react';
 
 import img1 from '../../assets/images/coin/btc-2.png'
 import img2 from '../../assets/images/coin/eth-2.png'
-import img3 from '../../assets/images/coin/tet-2.png'
+import img3 from '../../assets/images/coin/ULC-50x50.png'
 import img4 from '../../assets/images/coin/bnb-2.png'
 
 import chart1 from '../../assets/images/icon/chart-up-2.png';

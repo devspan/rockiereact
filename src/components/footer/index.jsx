@@ -42,19 +42,19 @@ function Footer(props) {
     const [listSocial] = useState([
         {
             icon: 'icon-facebook-f',
-            path: '#'
+            path: 'https://www.facebook.com/profile.php?id=61559577652699'
         },
         {
             icon: 'icon-instagram',
-            path: '#'
+            path: 'https://www.instagram.com/ultronexchange/'
         },
         {
             icon: 'icon-youtube',
-            path: '#'
+            path: 'https://www.youtube.com/channel/UCbO-x-iBs56yjD5eOz3JV7Q'
         },
         {
             icon: 'icon-twitter',
-            path: '#'
+            path: 'https://twitter.com/ultronexchange'
         },
     ])
 
@@ -109,7 +109,7 @@ function Footer(props) {
                         </ul>
                     </div>
                     </div>
-                    <div className="col-xl-8 col-md-6">
+                    <div className="col-xl-4 col-md-6">
                     <div className="widget">
                         <div className="widget-link">
                         <h6 className="title">PRODUCTS</h6>
@@ -133,21 +133,20 @@ function Footer(props) {
                         </div>
                     </div>
                     </div>
-                    {/* <div className="col-xl-4 col-md-12">
+                    <div className="col-xl-4 col-md-12">
                     <div className="footer-contact">
-                        <h5>Newletters</h5>
+                        <h6>Stay Updated</h6>
                         <p>
-                        Subscribe our newsletter to get more free design course and
-                        resource.
+                        Connect with us on follwoing medias
                         </p>
-                        <form action="#">
+                        {/* <form action="#">
                         <input
                             type="email"
                             placeholder="Enter your email"
                             required=""
                         />
                         <button type="submit" className="btn-action">Submit</button>
-                        </form>
+                        </form> */}
                         <ul className="list-social">
                             {
                                 listSocial.map((data,idx) => (
@@ -158,14 +157,14 @@ function Footer(props) {
                             }
                         </ul>
                     </div>
-                    </div> */}
+                    </div>
                 </div>
                 </div>
             </div>
             <div className="container-fluid">
                 <div className="footer__bottom">
                 <p>
-                    ©2022 UltronX.com. All rights reserved. Terms of Service | Privacy
+                    ©2024 Ultronxchange.io All rights reserved. Terms of Service | Privacy
                     Terms
                 </p>
                 </div>

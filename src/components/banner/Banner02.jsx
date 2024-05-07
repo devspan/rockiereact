@@ -12,8 +12,8 @@ Banner02.propTypes = {
 function Banner02(props) {
     const [dataBlock] = useState(
         {
-            heading: 'A trusted and secure cryptocurrency exchange.',
-            desc : '',
+            heading: 'The new era of fastest, secure gateway to the future of finance.',
+            desc : 'Fortress your future. Buy, sell, and store crypto securely',
         }
     );
     return (
