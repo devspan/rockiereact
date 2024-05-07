@@ -1,107 +1,102 @@
-import React , { useState , useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import { Link , NavLink } from 'react-router-dom';
-import menus from '../../pages/menu';
-import { Dropdown } from 'react-bootstrap';
+import { Link, NavLink } from "react-router-dom";
+import menus from "../../pages/menu";
+import { Dropdown } from "react-bootstrap";
 
-import './styles.scss';
+import "./styles.scss";
 // import logo from '../../assets/images/logo/logo.png';
 // import logodark from '../../assets/images/logo/logo-dark.png';
-import logo from '../../assets/images/logo/Exchange Logo-03.png';
-import logodark from '../../assets/images/logo/Exchange Logo-03.png';
-import avt from '../../assets/images/avt/avt-01.jpg';
-import DarkMode from './DarkMode';
+import logo from "../../assets/images/logo/Exchange Logo-03.png";
+import logodark from "../../assets/images/logo/Exchange Logo-03.png";
+import avt from "../../assets/images/avt/avt-01.jpg";
+import DarkMode from "./DarkMode";
 
-import icon1 from '../../assets/images/flags/us.jpg'
-import icon2 from '../../assets/images/flags/spain.jpg'
-import icon3 from '../../assets/images/flags/germany.jpg'
-import icon4 from '../../assets/images/flags/italy.jpg'
-import icon5 from '../../assets/images/flags/russia.jpg'
+import icon1 from "../../assets/images/flags/us.jpg";
+import icon2 from "../../assets/images/flags/spain.jpg";
+import icon3 from "../../assets/images/flags/germany.jpg";
+import icon4 from "../../assets/images/flags/italy.jpg";
+import icon5 from "../../assets/images/flags/russia.jpg";
 // import Button from '../button';
 
-
-
 const Header = () => {
-
-    const [scroll, setScroll] = useState(false);
-        useEffect(() => {
-        window.addEventListener("scroll", () => {
-            setScroll(window.scrollY > 300);
-        });
-        return () => {
-            setScroll({});
-        }
-    }, []);
-
-    const [menuActive, setMenuActive] = useState(null);
-
-    const handleMenuActive = () => {
-        setMenuActive(!menuActive);
-      };
-
-
-    const [activeIndex, setActiveIndex] = useState(null);
-    const handleDropdown = index => {
-        setActiveIndex(index);
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 300);
+    });
+    return () => {
+      setScroll({});
     };
+  }, []);
 
-    return (
-        <header id="header_main" className={`header ${scroll ? 'is-fixed' : ''}`}>
-            <div className="container-fluid">
-                <div className="row">
-                <div className="col-12">
-                    <div className="header__body d-flex justify-content-between">
-                    <div className="header__left">
-                        <div className="logo">
-                        <a href='/' className="light">
-                            <img
-                            src={logo}
-                                            alt="UltronX"
-                                            width={200}
-                                            height={50}
-                            />
-                        </a>
-                        <a href='/' className="dark">
-                            <img
-                            src={logodark}
-                                            alt="UltronX"
-                                            width={200}
-                                            height={50}
-                            />
-                        </a>
-                        </div>
-                        <div className="left__main">
-                            <nav id="main-nav" className={`main-nav ${menuActive ? 'active' : ''}`}>
-                                <ul id="menu-primary-menu" className="menu">
-                                {
-                                    menus.map((data,idx) => (
-                                        <li key={idx} onClick={()=> handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`}
+  const [menuActive, setMenuActive] = useState(null);
 
-                                        >
-                                            <a href={data.links}>{data.name}</a>
-                                            {
-                                                data.namesub &&
-                                                <ul className="sub-menu">
-                                                    {
-                                                        data.namesub.map((submenu) => (
-                                                            <li key={submenu.id} className="menu-item"><a href={submenu.links}>{submenu.sub}</a></li>
-                                                        ))
-                                                    }
-                                                </ul>
-                                            }
+  const handleMenuActive = () => {
+    setMenuActive(!menuActive);
+  };
 
-                                        </li>
-                                    ))
-                                }
-                                </ul>
-                            </nav>
+  const [activeIndex, setActiveIndex] = useState(null);
+  const handleDropdown = (index) => {
+    setActiveIndex(index);
+  };
 
+  return (
+    <header id="header_main" className={`header ${scroll ? "is-fixed" : ""}`}>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12">
+            <div className="header__body d-flex justify-content-between">
+              <div className="header__left">
+                <div className="logo">
+                  <a href="/" className="light">
+                    <img
+                      src={logo}
+                      alt="UltronX"
+                      style={{ maxWidth: "100%", height: "auto" }}
+                    />
+                  </a>
+                  <a href="/" className="dark">
+                    <img
+                      src={logodark}
+                      alt="UltronX"
+                      style={{ maxWidth: "100%", height: "auto" }}
+                    />
+                  </a>
+                </div>
+                <div className="left__main">
+                  <nav
+                    id="main-nav"
+                    className={`main-nav ${menuActive ? "active" : ""}`}
+                  >
+                    <ul id="menu-primary-menu" className="menu">
+                      {menus.map((data, idx) => (
+                        <li
+                          key={idx}
+                          onClick={() => handleDropdown(idx)}
+                          className={`menu-item ${
+                            data.namesub ? "menu-item-has-children" : ""
+                          } ${activeIndex === idx ? "active" : ""}`}
+                        >
+                          <a href={data.links}>{data.name}</a>
+                          {data.namesub && (
+                            <ul className="sub-menu">
+                              {data.namesub.map((submenu) => (
+                                <li key={submenu.id} className="menu-item">
+                                  <a href={submenu.links}>{submenu.sub}</a>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
+                </div>
+              </div>
 
-                        </div>
-                    </div>
-
-                    <div className="header__right">
-                            {/* <Dropdown>
+              <div className="header__right">
+                {/* <Dropdown>
                                 <Dropdown.Toggle >
                                     Assets
                                 </Dropdown.Toggle>
@@ -228,10 +223,9 @@ const Header = () => {
                                 </Dropdown.Menu>
                             </Dropdown> */}
 
-                        {/* <DarkMode /> */}
+                {/* <DarkMode /> */}
 
-
-                        {/* <div className="dropdown notification">
+                {/* <div className="dropdown notification">
                         <button
                             className="btn dropdown-toggle"
                             type="button"
@@ -440,23 +434,21 @@ const Header = () => {
 
                                 </Dropdown.Menu>
                             </Dropdown> */}
-                        <div className="wallet">
-                                    {/* <Link to="/account/login"> Login </Link> */}
-                                    <a href='/account/login'>Login</a>
-                        </div>
-                        <div className="wallet">
-                                    {/* <Link to="/account/register"> Register </Link> */}
-                                    <a href='/account/register'>Register</a>
-                        </div>
-
-                    </div>
-                    </div>
+                <div className="wallet">
+                  {/* <Link to="/account/login"> Login </Link> */}
+                  <a href="/account/login">Login</a>
                 </div>
+                <div className="wallet">
+                  {/* <Link to="/account/register"> Register </Link> */}
+                  <a href="/account/register">Register</a>
                 </div>
+              </div>
             </div>
-        </header>
-
-    );
-}
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
 
 export default Header;

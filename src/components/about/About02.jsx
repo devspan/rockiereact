@@ -16,8 +16,8 @@ function About02(props) {
 
     const [dataBlock] = useState(
         {
-            heading: 'We are the most trusted cryptocurrency platform.',
-            desc : 'We believe UltronX is here to stay — and that a future worth building is one which opens its doors and invites everyone in.',
+            heading: 'Elevate Your Crypto Journey with UltronXchange',
+            desc : 'UltronXchange is the premier cryptocurrency exchange, built on unwavering trust and designed for the future.',
         }
     );
     const [dataTrader] = useState([
