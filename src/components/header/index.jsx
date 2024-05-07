@@ -53,14 +53,14 @@ const Header = () => {
                     <img
                       src={logo}
                       alt="UltronX"
-                      style={{ maxWidth: "100%", height: "auto" }}
+                      style={{ maxWidth: "150px", height: "auto" }}
                     />
                   </a>
                   <a href="/" className="dark">
                     <img
                       src={logodark}
                       alt="UltronX"
-                      style={{ maxWidth: "100%", height: "auto" }}
+                      style={{ maxWidth: "180px", height: "auto" }}
                     />
                   </a>
                 </div>
