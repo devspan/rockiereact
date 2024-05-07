@@ -99,7 +99,7 @@ function Footer(props) {
                         <h6>Let's talk! 🤙</h6>
                         <ul className="list">
                         {/* <li><p>+12 345 678 9101</p></li> */}
-                        <li><p>info@ultronxchnage.io</p></li>
+                        <li><p>info@ultronxchange.io</p></li>
                         <li>
                             {/* <p>
                             Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi
