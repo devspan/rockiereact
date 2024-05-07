@@ -23,6 +23,7 @@ function Footer(props) {
         { icon: 'fab fa-instagram', path: 'https://www.instagram.com/ultronexchange/' },
         { icon: 'fab fa-youtube', path: 'https://www.youtube.com/channel/UCbO-x-iBs56yjD5eOz3JV7Q' },
         { icon: 'fab fa-twitter', path: 'https://twitter.com/ultronexchange' },
+        { icon: 'fab fa-telegram', path: 'https://t.me/ultronxchange' },
     ]);
 
     const [isVisible, setIsVisible] = useState(false);
