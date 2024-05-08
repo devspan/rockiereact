@@ -60,7 +60,7 @@ const Header = () => {
                     <img
                       src={logodark}
                       alt="UltronX"
-                      style={{ maxWidth: "180px", height: "auto" }}
+                      style={{ maxWidth: "165px", height: "auto" }}
                     />
                   </a>
                 </div>
