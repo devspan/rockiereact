@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install production dependencies only
 RUN npm install --only=production
 
+# Install serve globally to serve the application
+RUN npm install -g serve
+
 # Copy the rest of the application source code
 COPY . .
 
@@ -22,7 +25,5 @@ EXPOSE 3000
 # Set the environment to production
 ENV NODE_ENV production
 
-# Serve the app using a simple Node.js server, such as serve
-# Note: You might need to install 'serve' if not already installed:
-# RUN npm install -g serve
+# Serve the app using 'serve'
 CMD ["serve", "-s", "build", "-l", "3000"]
