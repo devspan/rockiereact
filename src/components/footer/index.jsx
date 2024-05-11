@@ -57,7 +57,7 @@ function Footer(props) {
           <div className="row">
             <div className="col-xl-4 col-md-6">
               <div className="info">
-                <a href="/" className="logo light">
+                <a href="/" className="logo dark">
                   <img src={img} alt="UltronX Logo" width={160} />
                 </a>
                 <h6>Let's talk! 🤙</h6>
