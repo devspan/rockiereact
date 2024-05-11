@@ -62,69 +62,77 @@ function Coinlist01(props) {
           uint: "ULC",
           link: "/account/trade/ULC-USDT",
           price: response.pairs_data["ULC-USDT"].price,
+          volume: response.pairs_data["ULC-USDT"].volume,
           sale: response.pairs_data["ULC-USDT"].price_24h.toFixed(2) + "%",
           class: response.pairs_data["ULC-USDT"].price_24h < 0 ? "down" : "up",
-          },
-          {
-            id: 2,
-            icon: img2,
-            name: "Ultron ARC",
-            uint: "UARC",
-            link: "/account/trade/UARC-USDT",
-            price: response.pairs_data["UARC-USDT"].price,
-            sale: response.pairs_data["UARC-USDT"].price_24h.toFixed(2) + "%",
-            class: response.pairs_data["UARC-USDT"].price_24h < 0 ? "down" : "up",
-          },
-          {
-            id: 3,
-            icon: img3,
-            name: "Bitcoin",
-            uint: "BTC",
-            link: "/account/trade/BTC-USDT",
-            price: response.pairs_data["BTC-USDT"].price,
-            sale: response.pairs_data["BTC-USDT"].price_24h.toFixed(2) + "%",
-            class: response.pairs_data["BTC-USDT"].price_24h < 0 ? "down" : "up",
-          },
-          {
-            id: 4,
-            icon: img4,
-            name: "Ethereum",
-            uint: "ETH",
-            link: "/account/trade/ETH-USDT",
-            price: response.pairs_data["ETH-USDT"].price,
-            sale: response.pairs_data["ETH-USDT"].price_24h.toFixed(2) + "%",
-            class: response.pairs_data["ETH-USDT"].price_24h < 0 ? "down" : "up",
-          },
-          {
-            id: 5,
-            icon: img5,
-            name: "Binance",
-            uint: "BNB",
-            link: "/account/trade/BNB-USDT",
-            price: response.pairs_data["BNB-USDT"].price,
-            sale: response.pairs_data["BNB-USDT"].price_24h.toFixed(2) + "%",
-            class: response.pairs_data["BNB-USDT"].price_24h < 0 ? "down" : "up",
-          },
-          {
-            id: 6,
-            icon: img6,
-            name: "Matic",
-            uint: "MATIC",
-            link: "/account/trade/MATIC-USDT",
-            price: response.pairs_data["MATIC-USDT"].price,
-            sale: response.pairs_data["MATIC-USDT"].price_24h.toFixed(2) + "%",
-            class: response.pairs_data["MATIC-USDT"].price_24h < 0 ? "down" : "up",
-          },
-          {
-            id: 7,
-            icon: img7,
-            name: "Tron",
-            uint: "TRX",
-            link: "/account/trade/TRX-USDT",
-            price: response.pairs_data["TRX-USDT"].price,
-            sale: response.pairs_data["TRX-USDT"].price_24h.toFixed(2) + "%",
-            class: response.pairs_data["TRX-USDT"].price_24h < 0 ? "down" : "up",
-          },
+        },
+        {
+          id: 2,
+          icon: img2,
+          name: "Ultron ARC",
+          uint: "UARC",
+          link: "/account/trade/UARC-USDT",
+          price: response.pairs_data["UARC-USDT"].price,
+          volume: response.pairs_data["UARC-USDT"].volume,
+          sale: response.pairs_data["UARC-USDT"].price_24h.toFixed(2) + "%",
+          class: response.pairs_data["UARC-USDT"].price_24h < 0 ? "down" : "up",
+        },
+        {
+          id: 3,
+          icon: img3,
+          name: "Bitcoin",
+          uint: "BTC",
+          link: "/account/trade/BTC-USDT",
+          price: response.pairs_data["BTC-USDT"].price,
+          volume: response.pairs_data["BTC-USDT"].volume,
+          sale: response.pairs_data["BTC-USDT"].price_24h.toFixed(2) + "%",
+          class: response.pairs_data["BTC-USDT"].price_24h < 0 ? "down" : "up",
+        },
+        {
+          id: 4,
+          icon: img4,
+          name: "Ethereum",
+          uint: "ETH",
+          link: "/account/trade/ETH-USDT",
+          price: response.pairs_data["ETH-USDT"].price,
+          volume: response.pairs_data["ETH-USDT"].volume,
+          sale: response.pairs_data["ETH-USDT"].price_24h.toFixed(2) + "%",
+          class: response.pairs_data["ETH-USDT"].price_24h < 0 ? "down" : "up",
+        },
+        {
+          id: 5,
+          icon: img5,
+          name: "Binance",
+          uint: "BNB",
+          link: "/account/trade/BNB-USDT",
+          price: response.pairs_data["BNB-USDT"].price,
+          volume: response.pairs_data["BNB-USDT"].volume,
+          sale: response.pairs_data["BNB-USDT"].price_24h.toFixed(2) + "%",
+          class: response.pairs_data["BNB-USDT"].price_24h < 0 ? "down" : "up",
+        },
+        {
+          id: 6,
+          icon: img6,
+          name: "Matic",
+          uint: "MATIC",
+          link: "/account/trade/MATIC-USDT",
+          price: response.pairs_data["MATIC-USDT"].price,
+          volume: response.pairs_data["MATIC-USDT"].volume,
+          sale: response.pairs_data["MATIC-USDT"].price_24h.toFixed(2) + "%",
+          class:
+            response.pairs_data["MATIC-USDT"].price_24h < 0 ? "down" : "up",
+        },
+        {
+          id: 7,
+          icon: img7,
+          name: "Tron",
+          uint: "TRX",
+          link: "/account/trade/TRX-USDT",
+          price: response.pairs_data["TRX-USDT"].price,
+          volume: response.pairs_data["TRX-USDT"].volume,
+          sale: response.pairs_data["TRX-USDT"].price_24h.toFixed(2) + "%",
+          class: response.pairs_data["TRX-USDT"].price_24h < 0 ? "down" : "up",
+        },
       ])
     }
     getData()
@@ -160,6 +168,7 @@ function Coinlist01(props) {
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">Last Price</th>
+                            <th scope="col">Volume</th>
                             <th scope="col">24h %</th>
                             <th scope="col"></th>
                           </tr>
@@ -173,12 +182,13 @@ function Coinlist01(props) {
                               <td>{idx.id}</td>
                               <td>
                                 <a href={idx.link}>
-                                          <img src={idx.icon} alt="icon" width={40}/>
+                                  <img src={idx.icon} alt="icon" width={40} />
                                   <span>{idx.name}</span>
                                   <span className="unit">{idx.unit}</span>
                                 </a>
                               </td>
                               <td className="boild">{idx.price}</td>
+                              <td className="boild">{idx.volume?.toLocaleString("en-IN", { maximumSignificantDigits: 3 })}</td>
                               <td className={`${idx.class}`}>{idx.sale}</td>
 
                               <td>
