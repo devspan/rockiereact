@@ -3,7 +3,7 @@ import React , {useEffect, useState} from 'react';
 import img1 from '../../assets/images/coin/btc-2.png'
 import img2 from '../../assets/images/coin/eth-2.png'
 import img3 from '../../assets/images/coin/ULC-50x50.png'
-import img4 from '../../assets/images/coin/bnb-2.png'
+import img4 from '../../assets/images/coin/uarc.png'
 
 import chart1 from '../../assets/images/icon/chart-up-2.png';
 import chart2 from '../../assets/images/icon/chart-down-2.png';
@@ -67,8 +67,8 @@ function Crypto02(props) {
                 name: 'Bitcoin',
                 unit: 'BTC',
                 price: response.pairs_data["BTC-USDT"].price,
-                sale:'7.2%',
-                class: 'success'
+                sale:parseFloat(response.pairs_data["BTC-USDT"].price_24h).toFixed(2) + '%',
+                class: response.pairs_data["BTC-USDT"].price_24h < 0 ? 'critical' : 'success'
             },
                 {
                     id: 2,
@@ -77,8 +77,8 @@ function Crypto02(props) {
                     name: 'Ethereum',
                     unit: 'ETH',
                     price: response.pairs_data["ETH-USDT"].price,
-                    sale:'7.2%',
-                    class: 'critical'
+                    sale:parseFloat(response.pairs_data["ETH-USDT"].price_24h).toFixed(2) + '%',
+                    class: response.pairs_data["ETH-USDT"].price_24h < 0 ? 'critical' : 'success'
                 },
                 {
                     id: 3,
@@ -87,18 +87,18 @@ function Crypto02(props) {
                     name: 'UltronX',
                     unit: 'ULC',
                     price: response.pairs_data["ULC-USDT"].price,
-                    sale:'3.54%',
-                    class: 'success'
+                    sale:parseFloat(response.pairs_data["ULC-USDT"].price_24h).toFixed(2) + '%',
+                    class: response.pairs_data["ULC-USDT"].price_24h < 0 ? 'critical' : 'success'
                 },
                 {
                     id: 4,
                     icon: img4,
                     chart: chart1,
-                    name: 'BNB',
-                    unit: 'BNB',
-                    price: response.pairs_data["BNB-USDT"].price,
-                    sale:'3.24%',
-                    class: 'success'
+                    name: 'UARC',
+                    unit: 'UARC',
+                    price: response.pairs_data["UARC-USDT"].price,
+                    sale: parseFloat(response.pairs_data["UARC-USDT"].price_24h).toFixed(2) + '%',
+                    class: response.pairs_data["UARC-USDT"].price_24h < 0 ? 'critical' : 'success'
                 }]
             )
         }
@@ -120,9 +120,9 @@ function Crypto02(props) {
                                     </div>
 
                                     <div className="right">
-                                    <img src={idx.chart} alt="UltronX" />
+                                    {/* <img src={idx.chart} alt="UltronX" /> */}
                                     <p className={`sale ${idx.class}`}>
-                                        <svg
+                                        {/* <svg
                                         width="8"
                                         height="12"
                                         viewBox="0 0 8 12"
@@ -133,8 +133,8 @@ function Crypto02(props) {
                                             d="M0.393244 5.90568C0.477403 6.06168 0.637433 6.15893 0.811488 6.15893H3.52179V11.5105C3.52179 11.7807 3.73601 12 3.99996 12C4.26392 12 4.47814 11.7807 4.47814 11.5105V6.15893H7.18844C7.36313 6.15893 7.52316 6.06168 7.60668 5.90568C7.69148 5.74969 7.68574 5.5591 7.59329 5.40832L4.40482 0.228447C4.31683 0.0861572 4.16445 0 3.99996 0C3.83547 0 3.68309 0.0861572 3.59511 0.228447L0.406633 5.40832C0.358178 5.48795 0.333313 5.57868 0.333313 5.6694C0.333313 5.75034 0.353715 5.83193 0.393244 5.90568Z"
                                             fill="white"
                                         />
-                                        </svg>
-                                        7.2%
+                                        </svg> */}
+                                        {idx.sale}
                                     </p>
                                     <p className="unit">{idx.unit}</p>
                                     </div>
