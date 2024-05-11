@@ -59,7 +59,6 @@ function Crypto02(props) {
         const getData = async () => {
             const data = await fetch("https://ultronxchange.io/api/v1/home-page/")
             const response = await data.json()
-            console.log(response.pairs_data)
             setDataCryptoContent([{
                 id: 1,
                 icon: img1,
@@ -114,7 +113,7 @@ function Crypto02(props) {
                             dataCryptoContent.map(idx => (
                                 <div key={idx.id} className="crypto-box">
                                     <div className="left">
-                                    <img src={idx.icon} alt="UltronX" />
+                                    <img src={idx.icon} alt="UltronX" width={64}/>
                                     <h6> {idx.name}</h6>
                                     <h6 className="price">{idx.price}</h6>
                                     </div>
